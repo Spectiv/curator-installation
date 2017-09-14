@@ -4,7 +4,7 @@
 # Installation
 
 ### Download Curator Server
-Create and navigate to the directory that `Curator Server` will live in.
+In the **Git Bash** session you opened, Create and navigate to the directory that `Curator Server` will live in.
 
 _Windows_  
 ```
