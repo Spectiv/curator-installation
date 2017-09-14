@@ -99,14 +99,13 @@ pm2 save
 ```
 Next, we'll handle the auto start functionality.
 
-#### Powershell
-_You'll need to open an **Administrator** session for this command._
+_Powershell - You'll need to open an **Administrator** session for this command._
 ```
 npm install pm2-windows-startup -g
 pm2-startup install
 ```
 
-#### MacOS and Linux
+_MacOS and Linux_
 ```
 pm2 startup
 ```
