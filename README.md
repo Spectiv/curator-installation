@@ -12,10 +12,15 @@ _**Windows Note**: you'll need to run the commands in this section in Git Bash, 
 First, we'll need to download the ssh private key file [here](https://drive.google.com/a/sparrowav.com/file/d/0B_MvBkpX7P0mTGhod0hJR0JHeUk/view?usp=sharing). It'll require that you sign into your Spectiv Google account.
 
 After the key downloads, we'll start the ssh agent that will handle authentication for us with the following command.  
-`eval "$(ssh-agent -s)"`  
+```
+eval "$(ssh-agent -s)"
+```
 
-Once that's running, we'll need to add the key file to that agent. It'll ask for a password. Open Slack and type `github key file password` to get the password.  
-`ssh-add /path/to/key/file`
+Once that's running, we'll need to add the key file to that agent. It'll ask for a password.  
+```
+ssh-add /path/to/key/file
+```
+Open Slack and type `github key file password` to get the password.
 
 ### Download Curator Server
 Open a terminal (or Powershell) instance.
