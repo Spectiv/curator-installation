@@ -14,7 +14,7 @@ First, we'll need to download the ssh private key file [here](https://drive.goog
 After the key downloads, we'll start the ssh agent that will handle authentication for us with the following command.  
 `eval "$(ssh-agent -s)"`  
 
-Once that's running, we'll need to add the key file to that agent. It'll ask for a password. It's one of the usual passwords we always use.  
+Once that's running, we'll need to add the key file to that agent. It'll ask for a password. Open Slack and type `github key file password` to get the password.  
 `ssh-add /path/to/key/file`
 
 ### Download Curator Server
