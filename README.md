@@ -4,10 +4,10 @@
 # Installation
 
 ### Prerequisites
-[Nodejs](https://nodejs.org/en/) and [Git](https://git-scm.com/) have to be installed. Make sure to get the latest version of Node.
+[Nodejs](https://nodejs.org/en/), [Git](https://git-scm.com/), and [Atom](https://atom.io/) have to be installed. Make sure to get the latest version of Node.
 
 ### Get SSH configured for Github
-_**Windows Note**: you'll need to run the commands in this section in Git Bash, which gets installed with Git. You should be able to search for it in the start menu._  
+_**Windows Note**: We'll start out having to run these commands in Git Bash, which is installed with Git. We'll switch to Powershell at a later point, however._  
 
 First, we'll need to download the ssh private key file [here](https://drive.google.com/a/sparrowav.com/file/d/0B_MvBkpX7P0mTGhod0hJR0JHeUk/view?usp=sharing). It'll require that you sign into your Spectiv Google account.
 
@@ -23,12 +23,12 @@ ssh-add /path/to/key/file
 Open Slack and type `github key file password` to get the password.
 
 ### Download Curator Server
-Open a terminal (or Powershell) instance.
 Create and navigate to the directory that `Curator Server` will live in.
 
-_Windows (Powershell)_  
+_Windows_  
 ```
-mkdir C:\Curator-Server; cd C:\Curator-Server
+cd C:
+mkdir Curator-Server && cd Curator-Server
 ```
 
 _Linux and MacOS_  
@@ -44,7 +44,7 @@ git pull git@github.com:euroclydon37/Curator-Server.git master
 
 # Configuration
 
-We need to configure the environment before starting the server. Let's start with installing all of the dependencies.
+We need to configure the environment before starting the server. On Windows, we need to finish the rest of this document in **Powershell**. Let's start with installing all of the dependencies.
 ```
 npm install
 ```
@@ -59,7 +59,12 @@ _MacOS or Linux_
 touch data/site-config.json
 ```
 
-Open `data/site-config.json` and paste the following into it. Replace `LocationName` with the actual name that you want to show up in the app.
+Open `data/site-config.json` with Atom.
+```
+atom data/site-config.json
+```
+
+Paste the following into it. Replace `LocationName` with the actual name that you want to show up in the app.
 ```json
 {
 	"name":"LocationName",
@@ -101,6 +106,12 @@ _MacOS and Linux_
 ```
 pm2 startup
 ```
+
+Now, let's reboot the computer to make sure that our processes are indeed starting on bootup. Once the computer is up and running, simply type
+```
+pm2 list
+```
+Verify that they're running and move on.
 
 ### Remote Monitoring
 _Skip this section for now. We don't pay for it._
