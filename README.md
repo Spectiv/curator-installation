@@ -102,7 +102,8 @@ _MacOS and Linux_
 pm2 startup
 ```
 
-### Remote Monitoring <small>_Skip this section for now. We don't pay for it._</small>
+### Remote Monitoring
+_Skip this section for now. We don't pay for it._
 ```
 pm2 register
 ```
