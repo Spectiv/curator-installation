@@ -77,14 +77,6 @@ _If working in **Powershell**, run this command in a separate Administrator sess
 sudo npm install -g pm2
 ```
 
-Once PM2 is installed, we need to register it so that we can remotely monitor our processes
-```
-pm2 register
-```
-To get the password, open slack and type `pm2` into any channel. Slackbot will respond with the account information.
-
-Once that's finished, it should launch a browser window where you can sign into PM2 and verify that the process information is showing up.
-
 ### Start the Processes.  
 _**Powershell Note**: Run this command in the original Powershell session you opened._
 ```
@@ -110,7 +102,13 @@ _MacOS and Linux_
 pm2 startup
 ```
 
+### Remote Monitoring <small>_Skip this section for now. We don't pay for it._</small>
+```
+pm2 register
+```
+To get the password, open slack and type `pm2` into any channel. Slackbot will respond with the account information.
 
+Once that's finished, it should launch a browser window where you can sign into PM2 and verify that the process information is showing up.
 
 # Conclusion
 You should be up and running and the server should be viewable from the app, now.
