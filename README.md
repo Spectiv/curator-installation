@@ -64,7 +64,7 @@ Open `data/site-config.json` with Atom.
 atom data/site-config.json
 ```
 
-Paste the following into it. Replace `LocationName` with the actual name that you want to show up in the app.
+Delete anything that's there (Powershell likes to put unknown characters) and paste the following into it. Replace `LocationName` with the actual name that you want to show up in the app.
 ```json
 {
 	"name":"LocationName",
@@ -85,7 +85,7 @@ sudo npm install -g pm2
 ### Start the Processes.  
 _**Powershell Note**: Run this command in the original Powershell session you opened._
 ```
-pm2 start content-server
+pm2 start content-server.js
 pm2 start main.js
 ```
 
