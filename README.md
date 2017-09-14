@@ -26,12 +26,12 @@ Open Slack and type `github key file password` to get the password.
 Open a terminal (or Powershell) instance.
 Create and navigate to the directory that `Curator Server` will live in.
 
-* _Windows (Powershell)_  
+_Windows (Powershell)_  
 ```
 mkdir C:\Curator-Server; cd C:\Curator-Server
 ```
 
-* _Linux and MacOS_  
+_Linux and MacOS_  
 ```
 mkdir ~/Curator-Server && cd ~/Curator-Server
 ```
@@ -50,11 +50,11 @@ npm install
 ```
 Next, we need to create the site-specific `.json` file.  
 
-* _Powershell_
+_Powershell_
 ```
 echo $null >> data/site-config.json
 ```
-* _MacOS or Linux_
+_MacOS or Linux_
 ```
 touch data/site-config.json
 ```
@@ -99,14 +99,14 @@ pm2 save
 ```
 Next, we'll handle the auto start functionality.
 
-* #### Powershell
+#### Powershell
 _You'll need to open an **Administrator** session for this command._
 ```
 npm install pm2-windows-startup -g
 pm2-startup install
 ```
 
-* #### MacOS and Linux
+#### MacOS and Linux
 ```
 pm2 startup
 ```
