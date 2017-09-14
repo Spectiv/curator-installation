@@ -26,12 +26,12 @@ Open Slack and type `github key file password` to get the password.
 Open a terminal (or Powershell) instance.
 Create and navigate to the directory that `Curator Server` will live in.
 
-*Windows (Powershell)*  
+* _Windows (Powershell)_  
 ```
 mkdir C:\Curator-Server; cd C:\Curator-Server
 ```
 
-*Linux and MacOS*  
+* _Linux and MacOS_  
 ```
 mkdir ~/Curator-Server && cd ~/Curator-Server
 ```
@@ -50,11 +50,11 @@ npm install
 ```
 Next, we need to create the site-specific `.json` file.  
 
-*Powershell*
+* _Powershell_
 ```
 echo $null >> data/site-config.json
 ```
-*MacOS or Linux*
+* _MacOS or Linux_
 ```
 touch data/site-config.json
 ```
@@ -70,7 +70,7 @@ Open `data/site-config.json` and paste the following into it. Replace `LocationN
 # Running the server
 We're going to use a process manager to run the server. This will make it easier to check on the status of the server and still give us the ability to view its output if we choose. It'll also restart it if it crashes for whatever reason.  
 
-First, let's install it.
+### Install PM2
 
 _If working in **Powershell**, run this command in a separate Administrator session and omit `sudo`_
 ```
@@ -85,12 +85,33 @@ To get the password, open slack and type `pm2` into any channel. Slackbot will r
 
 Once that's finished, it should launch a browser window where you can sign into PM2 and verify that the process information is showing up.
 
-Now you're ready to start the process.  
+### Start the Processes.  
 _**Powershell Note**: Run this command in the original Powershell session you opened._
 ```
 pm2 start content-server
 pm2 start main.js
 ```
+
+### Surviving Reboots
+First, we need to save the process list.
+```
+pm2 save
+```
+Next, we'll handle the auto start functionality.
+
+* #### Powershell
+_You'll need to open an **Administrator** session for this command._
+```
+npm install pm2-windows-startup -g
+pm2-startup install
+```
+
+* #### MacOS and Linux
+```
+pm2 startup
+```
+
+
 
 # Conclusion
 You should be up and running and the server should be viewable from the app, now.
