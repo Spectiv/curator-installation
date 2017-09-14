@@ -19,7 +19,7 @@ Once that's running, we'll need to add the key file to that agent. It'll ask for
 
 ### Download Curator Server
 Open a terminal (or Powershell) instance.
-Create and navigate to the directory that **Curator Server** will live in.
+Create and navigate to the directory that `Curator Server` will live in.
 
 *Windows (Powershell)*  
 ```
