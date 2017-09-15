@@ -5,7 +5,10 @@ This repo details how to install all of the various components of a Curator syst
 [Nodejs](https://nodejs.org/en/), [Git](https://git-scm.com/), [Android Studio](https://developer.android.com/studio/index.html) and [Atom](https://atom.io/) have to be installed. Make sure to get the latest version of Node.
 
 ## Get SSH configured for Github
-_**Windows Note**: These commands will have to be run in Git Bash, which is installed with Git. Leave the session open as you work through the other installation instructions, as you'll need it from time to time._  
+_**Windows Note**: These commands will have to be run in Git Bash, which is installed with Git. Leave the session open as you work through the other installation instructions, as you'll need it from time to time.  
+**Git Bash must be run as Administrator**_  
+
+
 
 First, we'll need to download the ssh private key file [here](https://drive.google.com/a/sparrowav.com/file/d/0B_MvBkpX7P0mTGhod0hJR0JHeUk/view?usp=sharing). It'll require that you sign into your Spectiv Google account. After the key downloads, we'll start the ssh agent that will handle authentication for us with the following command.  
 ```
