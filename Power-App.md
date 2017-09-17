@@ -39,7 +39,7 @@ cd spectiv-power
 
 ## Configuration
 
-If you're in China, you'll need to checkout the appropriate branch.
+If you're in **China**, you'll need to checkout the appropriate branch.
 ```
 git checkout newStrips
 ```
@@ -49,7 +49,7 @@ Install the dependencies
 pip install -r requirements.txt
 ```
 
-Next, you'll need to set the environment variable. Replace `value` with one of the provided values below.
+Next, you'll need to set the environment variable. Replace `value` with `project.server.config.DevelopmentConfig` unless you're in **China**. Then `project.server.config.ProductionConfig` should be used instead.
 
 _**Windows** - You'll have to run this in an Administrator Powershell session_
 ```
@@ -60,8 +60,6 @@ _**MacOS** or **Linux**_
 ```
 export APP_SETTINGS="value"
 ```
-
-The value to use is `project.server.config.DevelopmentConfig` unless you're in **China**. In that case, `project.server.config.ProductionConfig` should be used.
 
 ## Running the App
 Now it should be as simple as this command, replacing `address` with the actual ip of the computer.
