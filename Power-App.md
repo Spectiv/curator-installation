@@ -61,6 +61,17 @@ _**MacOS** or **Linux**_
 export APP_SETTINGS="value"
 ```
 
+Next, you'll need to update layout.json with the layout for the rack power, pods and alarms
+```
+atom layout.json
+```
+*Make sure to name pods `Pod_Pwr_XX` where `XX` is the number. Racks should be `Rack_Pwr` or `Rack_Pwr_XX` if you need more than one.*
+
+Finally, after layout.json is the way it should be, this script will use it to set up the database.
+```
+python manage.py initialize_system
+```
+
 ## Running the App
 Now it should be as simple as this command, replacing `address` with the actual ip of the computer.
 ```
