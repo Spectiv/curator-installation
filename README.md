@@ -21,9 +21,19 @@ ssh-add /path/to/key/file
 ```
 Open Slack and type `github key file password` to get the password.
 
+****
+
 
 ## Installation
-[Curator Server](https://github.com/euroclydon37/curator-installation/blob/master/Curator-Server.md) is the hub that controls all of the players running on the network.  
-The [Android app](https://github.com/euroclydon37/curator-installation/blob/master/Android-Player.md) displays images and streams videos given to it by `Curator Server`.  
-The [Curator app](https://github.com/euroclydon37/curator-installation/blob/master/Curator-App.md) is the place where users can configure players, content, and playlists.  
-The [Power App](https://github.com/euroclydon37/curator-installation/blob/master/Power-App.md) is written by Adam and is used to cycle the outlets of a smart powerstrip.
+
+**Important** - Make sure that you've done everything above before moving on to the installation instructions linked below.
+
+**Installed on the server computer**
+* [Curator Server](https://github.com/euroclydon37/curator-installation/blob/master/Curator-Server.md) is the hub that controls all of the players running on the network.  
+* [Power App](https://github.com/euroclydon37/curator-installation/blob/master/Power-App.md) is written by Adam and is used to cycle the outlets of a smart powerstrip.
+
+**Installed on the Sony Monitors**
+ * [Android app](https://github.com/euroclydon37/curator-installation/blob/master/Android-Player.md) displays images and streams videos given to it by `Curator Server`.  
+
+**Installed on a laptop or other personal computer**
+ * [Curator app](https://github.com/euroclydon37/curator-installation/blob/master/Curator-App.md) is the place where users can configure players, content, and playlists.  
