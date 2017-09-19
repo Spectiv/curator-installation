@@ -21,8 +21,6 @@ ssh-add /path/to/key/file
 ```
 Open Slack and type `github key file password` to get the password.
 
-****
-
 
 ## Installation
 
