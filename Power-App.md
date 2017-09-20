@@ -28,7 +28,7 @@ cd ~
 
 `Clone` the repo instead of pulling it. This is because we're going to have to switch to a different branch for the China install.
 ```
-git clone git@gitlab.com:adamkaz/spectiv-power.git master
+git clone git@gitlab.com:adamkaz/spectiv-power.git
 ```
 
 Now cd into the new directory.
@@ -77,3 +77,5 @@ Now it should be as simple as this command, replacing `address` with the actual 
 ```
 python manage.py runserver -h address -p 80
 ```
+
+## Autostarting the application
