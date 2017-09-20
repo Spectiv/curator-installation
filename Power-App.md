@@ -79,3 +79,25 @@ python manage.py runserver -h address -p 80
 ```
 
 ## Autostarting the application
+
+#### Windows
+Create a batch file to start Adam's app
+1. Browse to `C:\spectiv-power` and create a new file called `power-start.txt`.
+1. Open `power-start.txt` with **atom**.
+1. Paste the following, replacing `address` with the desired ip address.
+```
+cd C:\spectiv-power
+python manage.py runserver -h address -p 80
+```
+1. Save the file and close **atom**.
+1. Rename the file to `power-start.bat`.
+
+Add the batch file to **Task Scheduler** so that it runs when the computer starts up.
+1. Open Windows **Task Scheduler** by launching the start menu, type `task scheduler`.
+1. In the top-right pane, click `Create Basic Task`.
+1. Name it `Spectiv-Power` or something that will be easy to identify should we have to edit it later.
+1. You can provide a description if you want.
+1. Click Next
+1. On the next screen, select `When the computer starts` as the trigger.
+1. Select `Start a program` as the action.
+1. Click `browse` on the next screen to find the script that you created.
