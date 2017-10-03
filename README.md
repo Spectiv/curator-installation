@@ -2,7 +2,13 @@
 This repo details how to install all of the various components of a Curator system.
 
 ## Prerequisites
-[Nodejs](https://nodejs.org/en/), [Git](https://git-scm.com/), [Android Studio](https://developer.android.com/studio/index.html) and [Atom](https://atom.io/) have to be installed. Make sure to get the latest version of Node.
+[Chocolatey](##Chocolatey-Installation), [Nodejs](https://nodejs.org/en/), [Git](https://git-scm.com/), [Android Studio](https://developer.android.com/studio/index.html) and [Atom](https://atom.io/) have to be installed. Make sure to get the latest version of Node.
+
+## Chocolatey Installation
+```ps
+Set-ExecutionPolicy Bypass; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+```
 
 ## Get SSH configured for Github
 _**Windows Note**: These commands will have to be run in Git Bash, which is installed with Git. Leave the session open as you work through the other installation instructions, as you'll need it from time to time.  
